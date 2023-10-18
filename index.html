@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Modal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/js.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="redRoundedBall"></div>
+        <div class="blueRoundedBall"></div>
+
+        <div class="cardContainer">
+
+            <div class="imageContainer"> <img src="images/MyPhoto.png" alt=""></div>
+
+            <div class="userName"> Muhammad Muneeb</div>
+
+            <div class="designation">Software Engineer</div>
+
+            <div class="btnGroup">
+
+                <div class="btn btnShare"> <i class="fa fa-thin fa-share"></i> Share My Profile</div>
+
+                <div class="btn btnFollow"> <a href="https://www.linkedin.com/in/muhammad-muneeb-javaid-a41560246/"
+                        target="_blank">Follow Me </a></div>
+            </div>
+        </div>
+
+        <div class="modal ">
+            <div class="modalHeader">
+                <h2>share my profile</h2>
+                <div class="crossIcon" onclick="removeModal()">
+                    <i class="fa-solid fa-xmark close"></i>
+                </div>
+            </div>
+
+            <div class="shareProfile">
+                <p>share this via</p>
+                <div class="iconContainer">
+                    <a href="https://www.facebook.com/" class="icon" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com/" class="icon" id="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="icon" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://web.whatsapp.com/" class="icon" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://web.telegram.org/z/" class="icon" id="telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="overlay"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d53d737a34.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
